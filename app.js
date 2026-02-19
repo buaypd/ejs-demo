@@ -11,7 +11,9 @@ app.get('/', (req, res) =>{
      color: "purple",
      food: "pizza",
      grade: 1.5,
-     age: 20
+     age: 20,
+     hobbies: ['Gym','Basketball','Hiking'],
+     classes: ['SDEV301','SDEV305','ENG335']
     }
   res.render('home', {user});
 });
