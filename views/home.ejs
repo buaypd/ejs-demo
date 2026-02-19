@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS-Demo</title>
+</head>
+<body>
+   <h1>Hello EJS!</h1> 
+   <h2>Hi there, <%= user.name %>!</h2>
+   <h2>My favorite color is <%= user.color %>.</h2>
+   <h2>My favorite food is <%= user.food %>.</h2>
+   <h2>My grade is <%= user.grade %>.</h2>
+
+   <% if (user.grade > 2.0) {  %>
+    <p>You're passing!</p>
+   <% } else { %>
+    <p>You are falling</p>
+<% } %>
+
+<% if (user.age >= 21) { %>
+    <p>Lets Party!!</p>
+ <% } else { %>
+    <p>young bull</p>
+<% } %>
+</body>
+</html>
